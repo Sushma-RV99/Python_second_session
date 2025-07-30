@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Malnad College of Engineering</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{url_for('about')}}">Institute</a></li>
+            <li><a class="dropdown-item" href="{{url_for('vision')}}">Vision and Mision</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{{url_for('messages')}}">Messages</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Academics
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{('academics_overview')}}">Computer Science and Engineering</a></li>
+            <li><a class="dropdown-item" href="{{('academics')}}">Electronics and Communication Engineering</a></li>
+            <li><a class="dropdown-item" href="{{('academics_civil')}}">Civil Engineering</a></li>
+            <li><a class="dropdown-item" href="{{('academics_mechanical')}}">Mechanical Engineering</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Admission
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{('admission')}}">Programs Offered</a></li>
+            <li><a class="dropdown-item" href="{{('scholarship')}}">Scholarships</a></li>
+            <li><a class="dropdown-item" href="{{('Research')}}">Research Programs</a></li>
+            <li><a class="dropdown-item" href="{{('contact')}}">Enquiry</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Placement
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{('placement')}}">Placement Policy</a></li>
+            <li><a class="dropdown-item" href="{{('recruiters')}}">Our Recruiters</a></li>
+            <li><a class="dropdown-item" href="{{('records')}}">Placement Records</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="jumbotron">
+    <img src="/static/images/MCE_logo.png" alt="Lights" style="width:100%"> </img>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="/static/images/admission.jpg"></img>
+    </div>
+    <div class="col-sm-4">
+      <img src="/static/images/download.jpg"></img>
+    </div>
+    <div class="col-sm-4">
+      <img src="/static/images/images.jpg"></img>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <img style=width:100% src="/static/images/NAAC.jpg"></img>
+    </div>
+    <div class="col-sm-4">
+      <img src="/static/images/indoor_games.jpg"></img>
+    </div>
+    <div class="col-sm-4">
+      <img src="/static/images/swimming_pool.jpg"></img>
+    </div>
+  </div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.183001055982!2d76.09891097405145!3d13.024015513729026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5483386aa3ffd%3A0x1ffd88ffad2a1ca6!2sMalnad%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1753704145334!5m2!1sen!2sin" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
